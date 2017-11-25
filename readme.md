@@ -4,10 +4,15 @@ Download for mac - minishift-1.8.0-darwin-amd64
 
 # Minishift commands
 `minishift profile set istio-demo`
+
 `minishift config set memory 8GB`
+
 `minishift config set cpus 2`
+
 `minishift config set openshift-version v3.7.0-rc.0`
+
 `minishift start --vm-driver=virtualbox`
+
 
 curl -L https://git.io/getLatestIstio | sh -
 export PATH="$PATH:/Users/anandakella/Downloads/minishift-1.8.0-darwin-amd64/istio-0.2.12/bin"
