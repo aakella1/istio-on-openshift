@@ -1,3 +1,22 @@
+# Minishift setup prerequisites
+
+Download for mac - minishift-1.8.0-darwin-amd64
+
+# Minishift commands
+minishift profile set istio-demo
+minishift config set memory 8GB
+minishift config set cpus 2
+minishift config set openshift-version v3.7.0-rc.0
+minishift start --vm-driver=virtualbox
+
+curl -L https://git.io/getLatestIstio | sh -
+export PATH="$PATH:/Users/anandakella/Downloads/minishift-1.8.0-darwin-amd64/istio-0.2.12/bin"
+
+Go to minishift/istio-version/bin
+istioctl version
+oc login
+developer/developer
+
 # Istio on Openshift
 
 This write up covers my notes on running Istio on OpenShift. As I test with different implementations of OpenShift (such as minishift or a real openshift cluster), I'll add additional links here.
